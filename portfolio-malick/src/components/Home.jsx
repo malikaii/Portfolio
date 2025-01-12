@@ -2,9 +2,13 @@ import React from 'react'
 import HeroImage from '../assets/Malick_ID_IMG.JPG'
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import {BsArrowRightShort} from "react-icons/bs";
+import SocialLinks from './SocialLinks';
+import Navbar from './navbar';
 
 const Home = () => {
   return (
+    <>
+    <Navbar/>
     <div
       name="home"
       className="h-screen bg-gradient-to-b
@@ -22,11 +26,12 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className='text-gray-500 py-4' max-w-md>
-            I have 2 years worth of personal project experience building and
-            designing web applications as well as 6 months of internship
-            experience at IBM. I am a graduate of the University of Louisiana at
-            Lafayette with a Bachelor of Science in Computer Science. I enjoy
-            building web applications with React, NodeJS/Springboot, and MySQL.
+            I have at least two years worth of professional experience building and
+            designing web applications as a Full Stack developer at IBM. 
+            I am a graduate of the University of Louisiana at
+            Lafayette with a Bachelor of Science in Computer Science. I build 
+            web applications using frameworks such as React, Angular,
+            NodeJS, Springboot, MySQL. Check out my portfolio below!
           </p>
 
           <div>
@@ -50,6 +55,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <SocialLinks/>
+    </>
   );
 }
 
