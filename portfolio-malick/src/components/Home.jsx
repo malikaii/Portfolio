@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from '../assets/heroImage.png'
+import HeroImage from '../assets/Malick_ID_IMG.JPG'
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import {BsArrowRightShort} from "react-icons/bs";
 
@@ -42,11 +42,11 @@ const Home = () => {
         </div>
 
         <div>
-          {/* <im`g
+          <img
             src={HeroImage}
             alt="my profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full"
-          />` */}
+          />`
         </div>
       </div>
     </div>

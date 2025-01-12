@@ -9,7 +9,7 @@ function App() {
       <Navbar/>
       <Home/>
       <SocialLinks/>
-      <About/>
+      {/* <About/> */}
     </div>  
   );
 }

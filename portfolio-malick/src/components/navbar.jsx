@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa';
-
 const Navbar = () => {
 
     const [nav, setNav] = useState(false);
