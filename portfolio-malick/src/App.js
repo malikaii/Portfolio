@@ -14,7 +14,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/projects" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
   );
