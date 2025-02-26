@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter basename="https://malikaii.github.io/Portfolio">
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Portfolio />} />
