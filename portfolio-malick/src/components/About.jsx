@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowLeftShort } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import BackBtn from "./BackBtn";
 
 const About = () => {
   return (
@@ -39,19 +40,7 @@ const About = () => {
           Outside of work, I enjoy collecting and playing music, cooking ethnic meals as well as creative writing. 
           When I have the time, I like to work on side projects that will deepen my knowledge and experience.
         </p>{" "}
-        <div>
-          <Link
-            className="group text-white w-fit px-6 py-3 my-2
-                    flex items-center rounded-md bg-gradient-to-r from-cyan-500
-                    to-blue-500"
-            to={"/"}
-          >
-            <span className="group-hover:rotate-90 duration-300">
-              <BsArrowLeftShort size={25} className="ml-1" />
-            </span>
-            Back
-          </Link>
-        </div>
+        <BackBtn/>
       </div>
     </div>
   );

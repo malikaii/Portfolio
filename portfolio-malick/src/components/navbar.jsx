@@ -8,14 +8,10 @@ const Navbar = () => {
     const links = [
       {
         id: 1,
-        link: "home",
-      },
-      {
-        id: 2,
         link: "about",
       },
       {
-        id: 3,
+        id: 2,
         link: "portfolio",
       },
     ];
@@ -25,7 +21,7 @@ const Navbar = () => {
     px-4 bg-black fixed"
     >
       <div>
-        <h1 className="text-5xl font-signature ml-2">Malick</h1>
+        <h1 className="text-5xl ml-2">Malick Ouedraogo</h1>
       </div>
 
       <ul className="hidden md:flex">
