@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.f2510aed.css",
-    "main.js": "/Portfolio/static/js/main.5a97c2b4.js",
+    "main.js": "/Portfolio/static/js/main.fe52bbe8.js",
     "static/media/Malick_ID_IMG.JPG": "/Portfolio/static/media/Malick_ID_IMG.546ea7c2a06fefee2ca2.JPG",
     "static/media/reactParallax.jpg": "/Portfolio/static/media/reactParallax.6f0d02a0def925fc9d7f.jpg",
     "static/media/reactWeather.jpg": "/Portfolio/static/media/reactWeather.a1988356c4f5a620716e.jpg",
@@ -12,10 +12,10 @@
     "static/media/spaceinvaders.png": "/Portfolio/static/media/spaceinvaders.64e355317909bb649b16.png",
     "index.html": "/Portfolio/index.html",
     "main.f2510aed.css.map": "/Portfolio/static/css/main.f2510aed.css.map",
-    "main.5a97c2b4.js.map": "/Portfolio/static/js/main.5a97c2b4.js.map"
+    "main.fe52bbe8.js.map": "/Portfolio/static/js/main.fe52bbe8.js.map"
   },
   "entrypoints": [
     "static/css/main.f2510aed.css",
-    "static/js/main.5a97c2b4.js"
+    "static/js/main.fe52bbe8.js"
   ]
 }
