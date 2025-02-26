@@ -1,10 +1,15 @@
 import React from 'react'
-import HeroImage from '../assets/heroImage.png'
+import HeroImage from '../assets/Malick_ID_IMG.JPG'
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import {BsArrowRightShort} from "react-icons/bs";
+import SocialLinks from './SocialLinks';
+import Navbar from './navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
+    <>
+    <Navbar/>
     <div
       name="home"
       className="h-screen bg-gradient-to-b
@@ -22,34 +27,37 @@ const Home = () => {
             I'm a Full Stack Developer
           </h2>
           <p className='text-gray-500 py-4' max-w-md>
-            I have 2 years worth of personal project experience building and
-            designing web applications as well as 6 months of internship
-            experience at IBM. I am a graduate of the University of Louisiana at
-            Lafayette with a Bachelor of Science in Computer Science. I enjoy
-            building web applications with React, NodeJS/Springboot, and MySQL.
+            I have at least two years worth of professional experience building and
+            designing web applications as a Full Stack developer at IBM. 
+            I am a graduate of the University of Louisiana at
+            Lafayette with a Bachelor of Science in Computer Science. I build 
+            web applications using frameworks such as React, Angular,
+            NodeJS, Springboot, MySQL. Check out my portfolio below!
           </p>
 
           <div>
-            <button className='group text-white w-fit px-6 py-3 my-2
+            <Link className='group text-white w-fit px-6 py-3 my-2
             flex items-center rounded-md bg-gradient-to-r from-cyan-500
-            to-blue-500'>
+            to-blue-500' to={"/portfolio"}>
               Portfolio
               <span className='group-hover:rotate-90 duration-300'>
                 <BsArrowRightShort  size={25} className='ml-1'/>
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
         <div>
-          {/* <im`g
+          <img
             src={HeroImage}
             alt="my profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full"
-          />` */}
+          />`
         </div>
       </div>
     </div>
+    <SocialLinks/>
+    </>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
 
     const [nav, setNav] = useState(false);
@@ -8,23 +8,11 @@ const Navbar = () => {
     const links = [
       {
         id: 1,
-        link: "home",
-      },
-      {
-        id: 2,
         link: "about",
       },
       {
-        id: 3,
+        id: 2,
         link: "portfolio",
-      },
-      {
-        id: 4,
-        link: "experience",
-      },
-      {
-        id: 5,
-        link: "contact",
       },
     ];
   return (
@@ -33,7 +21,7 @@ const Navbar = () => {
     px-4 bg-black fixed"
     >
       <div>
-        <h1 className="text-5xl font-signature ml-2">Malick</h1>
+        <h1 className="text-5xl ml-2">Malick Ouedraogo</h1>
       </div>
 
       <ul className="hidden md:flex">
@@ -43,7 +31,7 @@ const Navbar = () => {
             className="px-4 cursor-pointer capitalize
             font-medium text-gray-500 hover:scale-105 duration-200"
           >
-            {link}
+            <Link to={link}>{link}</Link>
           </li>
         ))}
       </ul>
