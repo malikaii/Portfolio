@@ -8,8 +8,7 @@ import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
-    <BrowserRouter>
-    
+    <BrowserRouter basename="https://malikaii.github.io/Portfolio">
       <Routes>
         <Route index element={<Home />} />
         <Route path="*" element={<ErrorPage />} />
