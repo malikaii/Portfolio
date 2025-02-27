@@ -1,11 +1,7 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import spaceInvaders from "../assets/spaceinvaders.png"
+import spaceInvaders from "../assets/portfolio/SpaceInvaders.png";
+import secondHarvest from "../assets/portfolio/SecondHarvest.png";
+import chatbotscreenshot from "../assets/portfolio/chatbotss.png";
 import BackBtn from "./BackBtn";
 
 const Portfolio = () => {
@@ -13,33 +9,24 @@ const Portfolio = () => {
     {
       id: 1,
       src: spaceInvaders,
+      info: "Space Invaders game made with Python",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: chatbotscreenshot,
+      info: "GoogleAI Chatbot made with React",
     },
     {
       id: 3,
-      src: navbar,
-    },
-    {
-      id: 4,
-      src: reactSmooth,
-    },
-    {
-      id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      src: secondHarvest,
+      info: "Non-profit Capstone Project made with React, Springboot, MySQL",
     },
   ];
 
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white "
+      className="bg-gradient-to-b from-black to-gray-800 text-white min-h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -50,23 +37,24 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, info }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
+              <div className="flex ">
+                <p className=" px-6 py-3 duration-200 hover:scale-105 mt-auto">
+                  {info}
+                </p>
               </div>
             </div>
           ))}
 
           <BackBtn />
         </div>
+        
       </div>
     </div>
   );
